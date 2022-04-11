@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <ul>
+            <% data.forEach(function(item,index){ %>
+                <li>User Number: <%= index +1 %></li></br>
+                <li>Username: <%= item.username %></li></br>
+                <li>NumOfActionleft: <%= item.numOfTransactions %></li></br>
+                <li>Is Admin? :<%= item.isAdmin %></li></br>
+                <a href="users/user/<%=item.username%>">Edit User</a><br/>
+                <a href="users/delete/<%=item.username%>">Delete User</a><br/>
+                <li>---------------------</li>
+            <% }) %> 
+        </ul>
+        <a href="users/add">Add User</a><br/>
+        <form action="/backToMain">
+            <input type="submit" value="Go to mainPage" />
+        </form>
+    </body>
+</html>

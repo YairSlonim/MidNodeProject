@@ -1,0 +1,21 @@
+[{
+    "username": "yairslonim",
+    "password": "123123",
+    "numOfTransactions": 5,
+    "isAdmin": true
+}, {
+    "username": "ronaldo",
+    "password": "123123",
+    "numOfTransactions": "3",
+    "isAdmin": "false"
+}, {
+    "username": "sadasdasd",
+    "password": "sadasdsad",
+    "numOfTransactions": 5,
+    "isAdmin": false
+}, {
+    "username": "asdsad",
+    "password": "sadasd",
+    "numOfTransactions": 5,
+    "isAdmin": true
+}]

@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <table>
+            <tr>
+              <td>Movie search: </td>
+              <td>Movies in same genre:</td>
+              
+            </tr>
+            <tr>
+              <td><a href="movies/<%= data %>"><%= data %> </a> </td>
+              <td><ul>
+                <% data2.forEach(function(item){ %>
+                    <li><a href="movies/<%= item %>"><%= item %> </a></li>
+            <% }) %></ul></td>
+              
+            </tr>
+          </table>
+          <form action="/backToMain">
+            <input type="submit" value="Go to mainPage" />
+        </form>
+    </body>
+</html>

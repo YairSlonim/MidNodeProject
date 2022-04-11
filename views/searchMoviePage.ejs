@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <form action="/movies/searchResults" method="GET">
+            Movie name: <input name="name" type="text" ><br/>
+            
+              <ul >
+              <select name="language" id="language">
+                <% language.forEach(function(item){ %>
+               <li> <option value="<%= item %>"><%= item %></option><br/>
+              </li>
+              <% }) %>
+              </select>
+            </ul>
+
+            <ul >
+                <select name="genres" id="genres">
+                  <% genres.forEach(function(item){ %>
+                 <li> <option value="<%= item %>"><%= item %></option><br/>
+                </li>
+                <% }) %>
+                </select>
+              </ul>
+            <input type="submit" value="search">
+        </form>
+        <form action="/backToMain">
+          <input type="submit" value="Go to mainPage" />
+      </form>
+    </body>
+</html>

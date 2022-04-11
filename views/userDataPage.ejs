@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action = "/users/edit/<%= data.username %>" method = "POST">
+      <label for="username">username: </label><input type="text" name="username" id="username" value="<%= data.username %>"></br>
+      <label for="password">password: </label><input type="text" name="password" id="password" value="<%= data.password %>"></br>
+      <label for="numOfTransactions">numOfTransactions: </label><input type="number" name="numOfTransactions" id="numOfTransactions" value="<%= data.numOfTransactions %>"></br>
+      <label for="isAdmin">isAdmin: </label><input type="text"  name="isAdmin" id="isAdmin" value="<%= data.isAdmin %>"></br>
+        <input type="submit" value="update">
+    </form>
+  </body>
+</html>

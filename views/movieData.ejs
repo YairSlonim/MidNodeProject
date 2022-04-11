@@ -1,0 +1,22 @@
+
+<html>
+    <body>
+       Movie id:  <h1><%= data[0].id %></h1>
+        Movie name: <h1><%= data[0].name %></h1>
+        Movie language: <h1><%= data[0].language %></h1>
+        <% if (data[0].image) { %>
+
+            <img src=<%=data[0].image.medium%> alt="yoast seo" height="288" width="288"/></br>
+           
+           <% } %>
+        Movie genres: <ul>
+            <% data[0].genres.forEach(function(item){ %>
+                <li><%= item %></li>
+        <% }) %>
+    </ul></br>
+    <input type="button" value="Back" onclick="window.history.back()" />
+        <form action="/backToMain">
+            <input type="submit" value="Go to mainPage" />
+        </form>
+    </body>
+</html>
